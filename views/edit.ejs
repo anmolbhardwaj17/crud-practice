@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit blog</title>
+</head>
+<body>
+  <h1>Edit blog</h1>
+  <form action="/<%=blog.id%>?_method=PATCH" method="POST">
+    <textarea name="blog" id="details" cols="30" rows="10"><%= blog.blog %></textarea>
+    <br>
+    <button>Submit</button>
+  </form>
+  <a href="/<%=blog.id%>">Back to blog</a>
+</body>
+</html>
